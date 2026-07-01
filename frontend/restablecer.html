@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restablecer contraseña — Ruta CR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Ruta<span class="dot">CR</span></a>
+    <nav class="nav-actions">
+      <a href="login.html" class="btn btn-ghost">Iniciar sesión</a>
+    </nav>
+  </div>
+</header>
+
+<section class="auth-wrap">
+  <div class="lane-line" aria-hidden="true"></div>
+  <div class="auth-card">
+    <p class="eyebrow">Último paso</p>
+    <h1>Nueva contraseña</h1>
+    <p class="sub">Elegí una contraseña nueva para tu cuenta.</p>
+
+    <div id="formMsg" class="form-msg"></div>
+
+    <form id="restablecerForm" novalidate>
+      <div class="field">
+        <label for="password">Nueva contraseña</label>
+        <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required>
+        <p class="field-hint">Mínimo 8 caracteres.</p>
+      </div>
+
+      <div class="field">
+        <label for="password2">Confirmar nueva contraseña</label>
+        <input type="password" id="password2" name="password2" autocomplete="new-password" minlength="8" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Guardar contraseña</button>
+    </form>
+
+    <p class="auth-switch"><a href="login.html">Volver a iniciar sesión</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">RUTA CR · Práctica no oficial para el examen teórico de manejo de Costa Rica</div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
